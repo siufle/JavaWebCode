@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>second</title>
+</head>
+<body>
+<!--规则表-->
+    <table border="1">
+        <!--表格标题-->
+        <caption>薪资表</caption>
+        <!--表头-->
+        <thead>
+        <!--Table Row-->
+            <tr>
+                <td>姓名</td>
+                <td>薪资</td>
+            </tr>
+        </thead>
+        <!--表格主体部分-->
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>15000</td>
+            </tr>
+        </tbody>
+        <!--脚注-->
+        <tfoot>
+        <tr>
+            <td>平均薪资</td>
+            <td>17500</td>
+        </tr>
+        </tfoot>
+    </table>
+
+<!--不规则表-->
+    <table border="1">
+        <caption><h1>成绩表</h1></caption>
+        <thead>
+            <tr>
+                <!--rowspan指所占行数  colspan指所占列数-->
+                <td rowspan="2" colspan="1">姓名</td>
+                <td rowspan="1" colspan="5">成绩</td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1">6月</td>
+                <td rowspan="1" colspan="1">7月</td>
+                <td rowspan="1" colspan="1">8月</td>
+                <td rowspan="1" colspan="1">9月</td>
+                <td rowspan="1" colspan="1">10月</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>60</td>
+                <td>61</td>
+                <td>62</td>
+                <td>63</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>60</td>
+                <td>61</td>
+                <td>62</td>
+                <td>63</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>60</td>
+                <td>61</td>
+                <td>62</td>
+                <td>63</td>
+                <td>64</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--层标签 没有边距-->
+    <div>这是没有边距的行</div>
+    <div>这是没有边距的行</div>
+    <div>这是没有边距的行</div>
+</body>
+</html>
