@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sixth</title>
+</head>
+<body>
+    <!--label标签和span标签都具有范围选择功能-->
+    <label>这是一个标签</label>
+    <label>
+        <!--文本域-->
+        <textarea rows="20" cols="50"></textarea>
+    </label>
+
+    <form action="" method="get">
+        <div>
+            <!--for的属性值一定是一个input输入框的ID 表示label标签被点击时
+            相应的input输入框获得焦点-->
+            <label for="input1">账号</label>
+            <input id="input1" type="text" name="username">
+        </div>
+        <div>
+            <!--readonly 只能读不能修改  disabled 禁用-->
+            <input type="text" value="只能读" readonly>
+            <input type="text" value="禁用" disabled>
+        </div>
+        <div>
+            <!--下拉列表-->
+            <select name="sex">
+                <option value="">请选择</option>
+                <option value="M">男</option>
+                <option value="F">女</option>
+                <option value="O">其他</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fifth</title>
+</head>
+<body>
+    <form action="" method="get">
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <input type="number" name="age">
+        <input type="date" name="birthday">
+        <input type="datetime-local" name="birthday">
+        <!--name除了可以采集数据外还可以分组，具有相同属性值的为一组，
+        一组内的单选按钮只能选一个-->
+        <input type="radio" value="M" name="sex" checked>男
+        <input type="radio" value="F" name="sex">女
+        <input type="radio" value="O" name="sex">其他
+        <!--复选框 可以选择多个同组的选项 checked 将某个选项设为默认选中-->
+        <input type="checkbox" value="1" name="channel" checked>报纸
+        <input type="checkbox" value="2" name="channel">电视
+        <input type="checkbox" value="3" name="channel">手机
+        <input type="file" name="head">
+        <!--当type的值为submit时 点击按钮可以提交表单 表单通过name采集数据-->
+        <input type="submit" value="按钮">
+    </form>
+</body>
+</html>
