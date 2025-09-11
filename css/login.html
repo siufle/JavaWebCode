@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XXX系统登录</title>
+    <!--引入外部样式-->
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <!--<style>
+        /*ID选择器优先级最高 类选择器其次 标签选择器最低*/
+
+        /*标签选择器  通过标签名选择元素*/
+        div{
+            color: red;/*文本字体颜色*/
+        }
+        /*类选择器*/
+        .content{
+            color: deeppink;
+        }
+        /*ID选择器*/
+        #a{
+            color: blue;
+        }
+    </style>-->
+
+    <style>
+        /*后代选择器*/
+        div ul li{
+            color: aqua;
+        }
+        /*子代选择器*/
+        /*div > ul > li{
+            color: aqua;
+        }*/
+    </style>
+</head>
+<body>
+    <div id="a" class="content">
+        这是一段文字
+    </div>
+    <input type="text" class="content">
+
+    <div>
+        <ul>
+            <li>
+                列表项
+            </li>
+        </ul>
+        <h1>
+            <ul>
+                <li>
+                    列表项
+                </li>
+            </ul>
+        </h1>
+    </div>
+</body>
+</html>
