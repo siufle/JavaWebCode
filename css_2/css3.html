@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3新特性</title>
+    <style>
+        #border{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            /*圆角*/
+            border-radius: 5px;
+            /*盒子阴影*/
+            /*box-shadow: inset 2px 2px 2px 2px red;*/
+            /*线性渐变*/
+            /*background-image: linear-gradient(to right, red, green, blue);*/
+            /*径向渐变*/
+            background: radial-gradient(circle, red 5%, yellow 10%,blue 15%, pink 20%,aqua);
+        }
+
+        .text{
+            width: 100px;
+            /*文本阴影*/
+            text-shadow: 2px 2px 2px red;
+            /*文本溢出时不换行*/
+            white-space: nowrap;
+            /*隐藏元素溢出部分*/
+            overflow: hidden;
+            /*文本溢出部分用省略号表示*/
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div id="border">
+
+    </div>
+
+    <div class="text">
+        这是一段很长的文字
+    </div>
+</body>
+</html>
