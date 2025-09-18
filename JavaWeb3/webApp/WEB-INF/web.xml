@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>张三</param-value>
+    </context-param>
+
+    <!--servlet配置-->
+    <servlet>
+        <!--给当前servlet取一个名字-->
+        <servlet-name>firstServlet</servlet-name>
+        <!--servlet类型配置-->
+        <servlet-class>com.cyx.jsp.servlet.FirstServlet</servlet-class>
+        <init-param>
+            <!--初始化参数名称-->
+            <param-name>characterEncoding</param-name>
+            <!--初始化参数的值-->
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>second</param-name>
+            <param-value>2</param-value>
+        </init-param>
+        <!--在服务器启动后就要加载该servlet实例 然后调用init方法初始化-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!--servlet请求配置-->
+    <servlet-mapping>
+        <servlet-name>firstServlet</servlet-name>
+        <url-pattern>/first</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>secondServlet</servlet-name>
+        <servlet-class>com.cyx.jsp.servlet.SecondServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>secondServlet</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping>
+</web-app>
