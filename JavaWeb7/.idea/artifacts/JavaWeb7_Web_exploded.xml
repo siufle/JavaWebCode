@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaWeb7:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWeb7_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaWeb7/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaWeb7" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.26" />
+          <element id="library" level="project" name="commons-beanutils-1.7.0" />
+          <element id="library" level="project" name="commons-logging-1.2" />
+          <element id="library" level="project" name="commons-beanutils-core-1.8.3" />
+          <element id="library" level="project" name="fastjson-1.2.78" />
+          <element id="library" level="project" name="druid-1.2.8" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
